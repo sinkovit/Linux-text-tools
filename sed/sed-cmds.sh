@@ -12,5 +12,5 @@ sed s'/pear/XXXX/' file3.txt > file3.txt
 cat file3.txt
 
 head -2 file1.txt > file3.txt
-sed -i s'/pear/XXXX/' file3.txt
+sed -i s'/pear/XXXX/' file3.txt # Does not work on MacOS
 cat file3.txt
