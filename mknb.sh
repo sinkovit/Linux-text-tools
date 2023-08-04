@@ -47,6 +47,14 @@ do
   cat $file/*.sh | while read line || [[ -n $line ]];
   do
       echo '  ' \"$line\\n\",  >> commands.ipynb
+      if [[ "$file" != *"CaseStudy"* && "$line" != "" ]];then
+         echo '  ' \"echo\\n\", >> commands.ipynb
+         echo '  ' \"\\n\",  >> commands.ipynb
+      fi
+#      if [ "$line" != "" ]; then
+#         echo '  ' \"echo\\n\", >> commands.ipynb
+#         echo '  ' \"\\n\",  >> commands.ipynb
+#      fi
   done
   echo '  ' \"\\n\"  >> commands.ipynb
   echo '  ' ]  >> commands.ipynb
