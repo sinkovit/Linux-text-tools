@@ -16,3 +16,5 @@ to speed automating tediuous and error prone text manipulations.
 The case studies were developed for users working in a scientific
 computing environment, but should be useful to anyone looking for a
 gentle introduction.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sinkovit/Linux-text-tools/HEAD)
