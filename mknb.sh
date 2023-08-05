@@ -17,7 +17,7 @@ echo '
   },
 ' > commands.ipynb
 
-for file in 'grep' 'split' 'sort' 'sed' 'head-and-tail' 'paste' 'CaseStudyHPL' 'CaseStudyFASTA' 'CaseStudyBERT'
+for file in 'awk' 'grep' 'split' 'sort' 'sed' 'head-and-tail' 'paste' 'CaseStudyHPL' 'CaseStudyFASTA' 'CaseStudyBERT'
 do
   echo ' ' { >> commands.ipynb
   echo '  ' \"cell_type\": \"markdown\",  >> commands.ipynb
@@ -46,15 +46,12 @@ do
   echo '  ' \"%%bash\\n\",  >> commands.ipynb
   cat $file/*.sh | while read line || [[ -n $line ]];
   do
+      line=${line//\"/\\\"}
       echo '  ' \"$line\\n\",  >> commands.ipynb
       if [[ "$file" != *"CaseStudy"* && "$line" != "" ]];then
          echo '  ' \"echo\\n\", >> commands.ipynb
          echo '  ' \"\\n\",  >> commands.ipynb
       fi
-#      if [ "$line" != "" ]; then
-#         echo '  ' \"echo\\n\", >> commands.ipynb
-#         echo '  ' \"\\n\",  >> commands.ipynb
-#      fi
   done
   echo '  ' \"\\n\"  >> commands.ipynb
   echo '  ' ]  >> commands.ipynb
