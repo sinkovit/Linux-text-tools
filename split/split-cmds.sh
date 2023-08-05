@@ -1,3 +1,3 @@
 split genome.fasta
-split -l 2000 genome.fasta genome_
-split -l 200 -t '>' genome.fasta genome_ # Does not work on MacOS
+split -l 2000 genome.fasta genome_v1_
+split -l 200 -t '>' genome.fasta genome_v2_ # Does not work on MacOS
