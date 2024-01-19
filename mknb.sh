@@ -1,3 +1,8 @@
+# This script generates a Jupyter notebook from the shell scripts. It
+# is normally executed by the owner of the repo after modification had
+# been made. It does not need to be executed by users of the repo
+# unless they wish to customize the examples.
+
 echo '
 {
  "cells": [
