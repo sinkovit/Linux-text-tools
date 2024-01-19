@@ -3,7 +3,7 @@
 This repository accompanies the *Linux tools for text processing* talk
 that is offered by SDSC and delivered through XSEDE, SDSC's HPC
 training series and other venues. It currently contains examples
-illustrating the use of awk, grep, head, paste, sed, sort, split and
+illustrating the use of awk, grep, head, paste, sed, sort, shuf, split and
 tail, along with several more realistic case studies that combine
 multiple tools.
 
