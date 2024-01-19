@@ -1,0 +1,12 @@
+apple green Canada
+apple green Mexico
+apple green USA
+apple red Canada
+apple red Mexico
+apple red USA
+banana green Canada
+banana green Mexico
+banana green USA
+banana red Canada
+banana red Mexico
+banana red USA

@@ -12,7 +12,7 @@ echo '
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Demonstration of using Linux tools"
+    "Demonstration of Linux text processing tools"
    ]
   },
 ' > commands.ipynb
