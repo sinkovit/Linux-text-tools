@@ -5,8 +5,8 @@ Display the first three/last three lines of file.txt using the
 head/tail commands.
 
 ```
-head -5 file.txt  
-tail -5 file.txt
+head -3 file.txt  
+tail -3 file.txt
 ```
 
 ### head/tail 2
