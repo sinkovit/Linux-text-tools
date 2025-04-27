@@ -5,8 +5,8 @@ Display the first three/last three lines of file.txt using the
 head/tail commands.
 
 ```
-head -3 file.txt  
-tail -3 file.txt
+head -5 file.txt  
+tail -5 file.txt
 ```
 
 ### head/tail 2
@@ -14,6 +14,18 @@ Using a combination of head and tail, display lines 5-10 of file.txt
 
 ```
 head -10 file.txt | tail -5
+```
+
+### paste 1
+Use the paste command to combine the planet names, colors,
+masses and duration of year into a single file using the default
+delimiter and user specified delimiters. Delete rows from one of the
+files and see how this affects the output.
+
+```
+paste planet-name.txt planet-mass.txt planet-year.txt planet-color.txt
+paste -d ',' planet-name.txt planet-mass.txt planet-year.txt planet-color.txt
+paste -d ' ', planet-name.txt planet-mass.txt planet-year.txt planet-color.txt
 ```
 
 ### awk 1
