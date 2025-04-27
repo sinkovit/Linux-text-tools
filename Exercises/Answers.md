@@ -28,6 +28,18 @@ paste -d ',' planet-name.txt planet-mass.txt planet-year.txt planet-color.txt
 paste -d ' ', planet-name.txt planet-mass.txt planet-year.txt planet-color.txt
 ```
 
+### nl 1
+Add line numbers to the planet-name.txt file. Experiment with options to left justify numbering, right justify numbering with zero padding, adjust the width of the numbers (useful in combination with zero padding), change the increment and change the starting number. Consult the nl man page as needed.
+
+```
+nl planet-name.txt
+nl -n ln planet-name.txt
+nl -n rz planet-name.txt
+nl -n rz -w 3 planet-name.txt
+nl -i 10 planet-name.txt
+nl -v 5 planet-name.txt
+```
+
 ### awk 1
 Write an awk one-liner to print out the first and last fields from
 each record of a file. Assume that the records can contain different
