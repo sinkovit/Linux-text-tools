@@ -29,6 +29,9 @@ masses and duration of year into a single file using the default
 delimiter and user specified delimiters. Delete rows from one of the
 files and see how this affects the output.
 
+### nl 1
+Add line numbers to the planet-name.txt file. Experiment with options to left justify numbering, right justify numbering with zero padding, adjust the width of the numbers (useful in combination with zero padding) and change the increment. Consult the nl man page as needed.
+
 ### awk 1
 Write an awk one-liner to print out the first and last fields from
 each record of a file. Assume that the records can contain different
