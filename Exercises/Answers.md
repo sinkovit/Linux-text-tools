@@ -40,6 +40,18 @@ nl -i 10 planet-name.txt
 nl -v 5 planet-name.txt
 ```
 
+### split 1
+Split the file split-ex.txt into three parts using (i) default file naming parameters, (ii) a user defined prefix (e.g. part_), (iii) user defined suffix and numeric suffic instead of alphabetic suffix. Repeat specifying that each output file should contain 10 lines.
+
+```
+split -n 3 split-ex.txt
+split -n 3 split-ex.txt part_
+split -n 3 -d split-ex.txt part_
+split -l 10 split-ex.txt
+split -l 10 split-ex.txt part_
+split -l 10 -d split-ex.txt part_
+```
+
 ### awk 1
 Write an awk one-liner to print out the first and last fields from
 each record of a file. Assume that the records can contain different
